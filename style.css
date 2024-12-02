@@ -10,7 +10,7 @@ body {
 #s1 {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/space.jpg);
+    background: url(/images/space.jpg);
     background-size: 100%;
     position: relative;
 }
@@ -20,7 +20,7 @@ body {
 #s2 {
     width: 100%;
     height: 100vh;
-    background-image: url(/images/ground.jpg);
+    background: url(/images/ground.jpg);
     background-size: 100%;
     display: grid;
     position: relative;
