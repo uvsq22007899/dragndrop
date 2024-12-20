@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +25,7 @@
        
 </section>
 
-    <section id="s2">
+    <section id="s2" class="container">
 
             <div class="div1">
                 <img class="draggable" src="./images/bug.png">
@@ -41,6 +41,10 @@
     </section>
 
 
+    <section id="s3"> </section>
+    <section id="s4"> </section>
+
+
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
 
     <script>
@@ -52,6 +56,7 @@
             var draggableElem = draggableElems[i];
             var draggie = new Draggabilly(draggableElem, {
                 // options...
+                containment:'#s1'
             });
             draggies.push(draggie);
         }
