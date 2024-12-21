@@ -1,26 +1,19 @@
-# Projet dragndrop
+# Projet Drag & Drop
 
-## H2
+Ce projet est une démonstration simple d'un système de glisser-déposer ("Drag & Drop") en HTML, CSS et JavaScript avec la bibliothèque Draggabilly.
 
+## Fonctionnalités
 
-**boldddd**
+- Déplacement des éléments.
+- Confinement des éléments dans leurs sections respectives.
 
-_italliiic_
+## Technologies utilisées
 
-~~baarrrara~~  ~ x2 
+- **HTML5** : Structure de la page.
+- **CSS3** : Mise en page et styles.
+- **JavaScript** : Logique de glisser-déposer.
+- **Draggabilly** : Bibliothèque pour faciliter le Drag & Drop.
 
-texteee
+## Auteur
 
-Voici un exemple [test la c bleuu la](https://www.youtube.com/watch?v=5B6yXvRr3xQ) 
-
-![altt](images/bug.png)
-
-1. 1ere etapee
-2. dfss
-3. dsfsfsezef
-
-- ezrzrz
-- ezrzrr
-- ezrzrfrt
-
-```la code la```
+Réalisé par **Souhil Kehli**.
