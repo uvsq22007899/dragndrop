@@ -9,57 +9,67 @@
 </head>
 
 <body>
-
-    <section id="s1">
-
-        <div class="div1">
-            <img class="draggable" src="./images/moon.webp">
-        </div>
-        <div class="div2">
-            <img class="draggable" src="./images/rocket.png">
-        </div>
-        <div class="div3">
-            <img class="draggable planet" src="./images/planet.png">
-        </div>
-      
-       
-</section>
-
-    <section id="s2" class="container">
-
+    <div class="scroll-container">
+        <section id="s1" class="scroll-section">
             <div class="div1">
-                <img class="draggable" src="./images/bug.png">
+                <img class="draggable" src="./images//space/astr.svg">
             </div>
             <div class="div2">
-                <img class="draggable" src="./images/ver (2).png">
+                <img class="draggable" src="./images//space/moon.svg">
             </div>
             <div class="div3">
-                <img class="draggable skeleton" src="./images/skeleton (2).png">
+                <img class="draggable planet" src="./images//space/rocket.svg">
             </div>
-        
-           
-    </section>
+        </section>
 
+        <section id="s2" class="scroll-section">
+            <div class="div1">
+                <img id="bird" class="draggable" src="./images//skye/bird.svg">
+            </div>
+            <div class="div2">
+                <img class="draggable" src="./images//skye/hel.svg">
+            </div>
+            <div class="div3">
+                <img class="draggable planet" src="./images//skye/plane.svg">
+            </div>
+        </section>
 
-    <section id="s3"> </section>
-    <section id="s4"> </section>
-
+        <section id="s3" class="scroll-section">
+            <div class="div1">
+                <img class="draggable" src="./images//city/bike.svg">
+            </div>
+            <div class="div2">
+                <img class="draggable" src="./images//city/car.svg">
+            </div>
+            <div class="div3">
+                <img id="men" class="draggable planet" src="./images//city/walk.svg">
+            </div>
+        </section>
+        <section id="s4" class="scroll-section">
+            <div class="div1">
+                <img class="draggable" src="./images//ground/frms.svg">
+            </div>
+            <div class="div2">
+                <img class="draggable" src="./images/ground/bug.svg">
+            </div>
+            <div class="div3">
+                <img class="draggable planet" src="./images/ground/mol.svg">
+            </div>
+        </section>
+    </div>
 
     <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.min.js"></script>
-
     <script>
-        var draggableElems = document.querySelectorAll('.draggable');
-        // array of Draggabillies
-        var draggies = []
-        // init Draggabillies
-        for (var i = 0; i < draggableElems.length; i++) {
-            var draggableElem = draggableElems[i];
-            var draggie = new Draggabilly(draggableElem, {
-                // options...
-                containment:'#s1'
+        var scrollSections = document.querySelectorAll('.scroll-section');
+        scrollSections.forEach((section) => {
+            var draggableElems = section.querySelectorAll('.draggable');
+            draggableElems.forEach((draggableElem) => {
+                new Draggabilly(draggableElem, {
+                    containment: section 
+                });
             });
-            draggies.push(draggie);
-        }
+        });
     </script>
 </body>
+
 </html>
