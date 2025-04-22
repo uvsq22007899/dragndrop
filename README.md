@@ -1,19 +1,33 @@
-# Projet Drag & Drop
+# 📜 A Visual History of Typewriter Art  
+**(Scrolly-Telling Website Prototype - Mobile First)**
 
-Ce projet est une démonstration simple d'un système de glisser-déposer ("Drag & Drop") en HTML, CSS et JavaScript avec la bibliothèque Draggabilly.
+Ce projet est une **interprétation immersive** de l’article [_A Visual History of Typewriter Art from 1893 to Today_](https://www.themarginalian.org/2014/05/23/typewriter-art-laurence-king/), repensé sous forme de **site web en scrolly-telling**, optimisé pour **le format téléphone**.
 
-## Fonctionnalités
+## 🎬 Expérience Utilisateur
 
-- Déplacement des éléments.
-- Confinement des éléments dans leurs sections respectives.
+- **Écran 1 :** Plongée visuelle dans l’univers des machines à écrire, avec une **vidéo scrollable** (grâce à `scrollyvideo.js`) qui **immerge l’utilisateur** à l’intérieur d’une machine à écrire.
+- **Écran 2 :** Apparition d’une **citation forte**, qui introduit le sujet.
+- **Écran 3 :** Début de la navigation dans l’article, avec une **interface à double navigation** :
+  - `Articles` (en haut à gauche, actif par défaut)
+  - `Œuvres` (en haut à droite)
 
-## Technologies utilisées
+Un **bouton central animé** (comme dans le [Lookbook Quechua SS25](https://quechua-lookbook.com/ss25/fr/)) apparaît après la citation, pour guider l’utilisateur dans la navigation.
 
-- **HTML5** : Structure de la page.
-- **CSS3** : Mise en page et styles.
-- **JavaScript** : Logique de glisser-déposer.
-- **Draggabilly** : Bibliothèque pour faciliter le Drag & Drop.
+## 🛠️ Technologies utilisées
 
-## Auteur
+- `HTML`
+- `CSS`
+- `JavaScript`
+- [`scrollyvideo.js`](https://github.com/dkaoster/scrolly-video) pour l'effet vidéo au scroll
 
-Réalisé par **Souhil Kehli**.
+## 📱 Format ciblé
+
+> ✅ **Mobile-first design**, pensé spécifiquement pour l'expérience tactile.
+
+## 📌 Remarques
+
+- Ce projet est encore en cours de développement.
+- Navigation dynamique et expérience visuelle immersive à affiner dans les prochains écrans.
+
+---
+
